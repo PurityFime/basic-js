@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
-
-module.exports = function createDreamTeam(/* members */) {
+// members = [ 'Amelia', 'Grace', 'Lily', 'Ruby' ];
+module.exports = function createDreamTeam(members) {
   if (Array.isArray(members)) {
     const strings = members.filter(member => typeof member === 'string');
     let arr = [];
@@ -21,5 +21,4 @@ module.exports = function createDreamTeam(/* members */) {
 } else {
     return false;
   }
-
 };
